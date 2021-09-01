@@ -18,7 +18,7 @@
                     </div>
                     <div class="tabs">
                         <ul>
-                            <li>
+                            <li data-tab = "#clock-selection">
                                 <i class="far fa-clock"></i>
                             </li>
                             <li>
@@ -34,7 +34,26 @@
                     </div>
                 </header>
                 <main>
-                    <section class="tab flex" id="clock-section"></section>
+                    <section class="tab flex" id="clock-section">
+                        <div class="toggler">
+                            <label for="clock-type-toggler" class="toggler-label">label</label>
+                            <input type="radio" class="clock-type-toggler" id="clock-type-toggler">
+                        </div>
+                        <div class="display-day">mon 2021</div>
+                        <div class="digital-clock">
+                            <div class="display-time-wrapper">
+                                <span class="display-time">00.00</span>
+                                <span class="time-mode">AM</span>
+                            </div>
+                        </div>
+                        <div class="analogue-clock">
+                            <div class="clock-frame">
+                                <div class="seconds-hand clock-hand"></div>
+                                <div class="minutes-hand clock-hand"></div>
+                                <div class="hour-hand clock-hand"></div>
+                            </div>
+                        </div>
+                    </section>
                 </main>
             </div>
         </div>
