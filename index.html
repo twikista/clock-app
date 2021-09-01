@@ -18,23 +18,23 @@
                     </div>
                     <div class="tabs">
                         <ul>
-                            <li data-tab = "#clock-selection">
+                            <li data-tab = "#clock-tab">
                                 <i class="far fa-clock"></i>
                             </li>
-                            <li>
+                            <li data-tab = "#stopwatch-tab">
                                 <i class="fas fa-stopwatch"></i>
                             </li>
-                            <li>
+                            <li data-tab="countdown-tab">
                                 <i class="fas fa-hourglass-half"></i>
                             </li>
-                            <li>
+                            <li data-tab="reminder-tab">
                                 <i class="far fa-bell"></i>
                             </li>
                         </ul>
                     </div>
                 </header>
-                <main>
-                    <section class="tab flex" id="clock-section">
+                <main class="tabs">
+                    <section class="tab flex" id="clock-tab">
                         <div class="toggler">
                             <label for="clock-type-toggler" class="toggler-label">label</label>
                             <input type="radio" class="clock-type-toggler" id="clock-type-toggler">
@@ -53,6 +53,26 @@
                                 <div class="hour-hand clock-hand"></div>
                             </div>
                         </div>
+                    </section>
+                    <section class="tab flex" id="stopwatch-tab">
+                        <div class="stopwatch-container">
+                            <div class="stopwatch-counter">00:00:00:000</div>
+                        </div>
+                        <div class="btns">
+                            <button class="btn start-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button class="btn start-btn">
+                                <i class="fas fa-pause"></i>
+                            </button>
+                            <button class="btn start-btn">
+                                <i class="fas fa-redo-alt"></i>
+                            </button>
+                        </div>
+                        <div class="stopwatch-split-container">
+                            
+                        </div>
+
                     </section>
                 </main>
             </div>
